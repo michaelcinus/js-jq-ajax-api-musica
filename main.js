@@ -20,11 +20,11 @@ function importaCD() {
 
 function estraiCD(cd) {
 
+
     for (var i = 0; i < cd.length; i++) {
 
         var disco = cd[i];
-
-        console.log(disco);
+        var genere = disco['genre'];
 
         var template = $('#template').html();
         var compiled = Handlebars.compile(template);
@@ -35,7 +35,6 @@ function estraiCD(cd) {
             'img' : disco['poster'],
             'title' : disco['title'],
             'author' : disco['author'],
-            'genre' : disco['genre'],
             'year' : disco['year'],
 
         });
@@ -44,8 +43,6 @@ function estraiCD(cd) {
         
     }
 }
-
-
 
 function init(){
 

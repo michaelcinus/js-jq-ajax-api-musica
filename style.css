@@ -26,6 +26,18 @@ header img {
     margin-top: 10px;
 }
 
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header-container select {
+    margin-top: 10px;
+    width: 50%;
+}
+
 .cds-container {
     display: flex;
     justify-content: center;
